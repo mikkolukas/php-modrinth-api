@@ -61,8 +61,8 @@ use \Aternos\ModrinthApi\Client\Options\SearchIndex;
 
 $options = new ProjectSearchOptions();
 $options->setQuery("mclogs");
-$options->setSearchIndex(SearchIndex::UPDATED);
-$projects = $modrinthClient->getProjects($options);
+$options->setIndex(SearchIndex::UPDATED);
+$projects = $modrinthClient->searchProjects($options);
 ```
 
 #### Facets
